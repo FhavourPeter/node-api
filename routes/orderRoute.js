@@ -4,7 +4,7 @@ const isLogin = require("../middlewares/isLogin");
 const isAdmin = require('../middlewares/isAdmin');
 const appErr = require('../helper/appErr');
 const { Order } = require('../model/Order');
-const { OrderItem } = require('../model/Order-Item');
+const { OrderItem } = require('../model/Order-item');
 
 
 router.post('/', isLogin, async (req, res, next) => {
